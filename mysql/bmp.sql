@@ -1,0 +1,8 @@
+SELECT * FROM raspberrypi.bmp order by ID descCREATE TABLE `bmp` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pa` int(11) NOT NULL,
+  `inhg` decimal(5,2) NOT NULL,
+  `ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+;
