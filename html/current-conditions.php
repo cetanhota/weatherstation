@@ -19,6 +19,9 @@ while(!feof($myfile)) {
 #echo fread($myfile,filesize("/var/www/html/output/current.out"));
 fclose($myfile);
 ?>
+<hr>
+<h1>Barometric Pressure</h1>
+<img src="image/BMP24HourReport.jpg">
 <center>
 <?php include ('include/footer.inc.php');
 ?>
