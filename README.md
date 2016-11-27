@@ -1,5 +1,5 @@
 # weatherstation
-Software
+Software:
 
 Raspbian Jessie
 
