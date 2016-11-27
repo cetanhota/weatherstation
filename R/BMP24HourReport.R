@@ -4,7 +4,7 @@ setwd("/home/wayne/R")
 con <- dbConnect(MySQL(), user="", password="", 
                  dbname="", host="")
 rq <- dbSendQuery(con, "SELECT * FROM 
-                  raspberrypi.bmp_rt order by id 
+                  raspberrypi.bmp order by id 
                   desc limit 288;")
 BMP <- fetch(rq)
 complete <- dbHasCompleted(rq)
