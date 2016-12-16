@@ -9,7 +9,7 @@ include ('include/header.inc.php');
 </head>
 <body bgcolor="#00ccff" background="image/cloud.jpg">
 <table align=center border=1 bgcolor=white>
-<td>The last 10 days worth of data is being reported below.</td>
+<td>The last 15 days worth of data is being reported below.</td>
 </table>
 <br>
 <table align=center>
@@ -28,7 +28,7 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM raspberrypi.v_history limit 10;";
+$sql = "SELECT * FROM raspberrypi.v_history limit 15;";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
      echo "<table border=1 align=center bgcolor=#ffffff><tr><th>-- High --</th><th>-- Low --</th><th>Date</th></tr>";
@@ -60,7 +60,7 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM raspberrypi.v_humidity_history limit 10;";
+$sql = "SELECT * FROM raspberrypi.v_humidity_history limit 15;";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
      echo "<table border=1 align=center bgcolor=#ffffff><tr><th>-- High --</th><th>-- Low --</th><th>Date</th></tr>";
@@ -92,7 +92,7 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM raspberrypi.v_dewpoint_history limit 10;";
+$sql = "SELECT * FROM raspberrypi.v_dewpoint_history limit 15;";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
      echo "<table border=1 align=center bgcolor=#ffffff><tr><th>-- High --</th><th>-- Low --</th><th>Date</th></tr>";
