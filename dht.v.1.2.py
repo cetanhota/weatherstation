@@ -1,4 +1,7 @@
 #!/usr/bin/python
+# Wayne Leutwyler
+# 12/16/2016
+
 import MySQLdb
 import sys
 import Adafruit_DHT

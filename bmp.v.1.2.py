@@ -1,5 +1,7 @@
 #!/usr/bin/python
 #11/28/2016
+# Wayne Leutwyler
+
 import MySQLdb
 import sys
 import Adafruit_BMP.BMP085 as BMP085

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-
+# Wayne Leutwyler
+# 12/16/2016
 import sys
 import Adafruit_DHT
 
