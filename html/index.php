@@ -20,6 +20,9 @@ fclose($myfile);
 echo "<br>";
 ?>
 </b></p></h2></center>
+<table align=center>
+<td><a href="http://weather.com">The Weather Channel</a></td><td><a href="https://www.wunderground.com">Weather Underground</a></td><td><a href="http://nbc4i.com/category/weather/">Storm Team 4</a></td>
+</table>
 <center> 
 <?php include ('include/footer.inc.php');
 ?>
