@@ -35,7 +35,7 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select max(tmp) mxtemp, min(tmp) mntemp from dht group by ts desc limit 1;";
+$sql = "select max(tmp) mxtemp, min(tmp) mntemp from dht group by DATE(ts) desc limit 1;";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
      echo "<table border=1 align=center bgcolor=#ffffff><tr><th>-- High --</th><th>-- Low --</th></tr>";
