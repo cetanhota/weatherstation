@@ -25,8 +25,9 @@
     <tr>
       <td align="center" bgcolor="white"><a href="index.php" name="main">Main Menu</a></td>
       <td align="center" bgcolor="white"><a href="current-conditions.php" name="current">Current Conditions</a></td>
-      <td align="center" bgcolor="white"><a href="report.php" name="report">Weather Report</a></td>
-	<td align="center" bgcolor="white"><a href="http://192.168.1.70:8080/stream_pi.html" name="camera">Video Stream</a></td>
+      <td align="center" bgcolor="white"><a href="report.php" name="Almanac">Weather Almanac</a></td>
+      <td align="center" bgcolor="white"><a href="http://192.168.1.70:8080/stream_pi.html" name="camera">Video Stream</a></td>
+      <td align="center" bgcolor="white"><a href="system-status.php" name="status">Server Status</a></td>
     </tr>
   </tbody>
 </table>

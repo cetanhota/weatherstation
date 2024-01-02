@@ -1,0 +1,3 @@
+Temp = 77.36 *F 
+Humidity = 57.40% 
+DewPoint = 68.84 *F
