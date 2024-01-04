@@ -62,46 +62,15 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 </td></tr>
-</table> 
-<center>
-<hr>
-<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/TempHLGraph.jpg">
-<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/HighBMPGraph.jpg">
-<hr>
-<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;"src="image/ytd.jpg">
-<hr>
-<a href="report-2017.php" class="f_button">2017 Highs and Lows</a>
-<a href="report-2018.php" class="f_button">2018 Highs and Lows</a>
-<h2>2018 / 2019 Temp dif by Month</h2>
-<table border=0>
-<th colspan=2></th>
-<tr>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/01-2019.jpg" alt="No Data">
-</td>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/02-2019.jpg" alt="No Data">
-</td>
-<tr>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/03-2019.jpg" alt="No Data">
-</td>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/04-2019.jpg" alt="No Data">
-</td>
-</tr>
-<tr>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/05-2019.jpg" alt="No Data">
-</td>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/06-2019.jpg" alt="No Data">
-</td>
-<tr>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/07-2019.jpg" alt="No Data">
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/08-2019.jpg" alt="No Data">
-</tr>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/09-2019.jpg" alt="No Data">
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/10-2019.jpg" alt="No Data">
-</tr>
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/11-2019.jpg" alt="No Data">
-<td><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border: 1px solid black;" src="image/12-2019.jpg" alt="No Data">
-</tr>
 </table>
+
+<center>
+<br>
+<table style="text-align: center; box-shadow: 5px 5px 5px #888888;" bgcolor=#0099ff border="0" cellpadding="2" cellspacing="2">
+<tr>
+<td style="vertical-align: top;"><img src="image/weather-30-day-history.png" alt="30 day history"  /></td>
+</table>
+
 <?php include ('include/footer.inc.php');
 ?>
 </center>

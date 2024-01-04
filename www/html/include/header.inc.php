@@ -44,7 +44,7 @@ h2 {
 </style>
 </head>
 <body>
-<table background="../image/winter.jpg" style="text-align: left; width: 100%; box-shadow: 5px 5px 5px #888888;" bgcolor=#0099ff border="0" cellpadding="2" cellspacing="2">
+<table background="../image/summer.jpg" style="text-align: left; width: 100%; box-shadow: 5px 5px 5px #888888;" bgcolor=#0099ff border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
       <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="" src="../image/dht-gauge.png"><br>
@@ -60,16 +60,14 @@ h2 {
 
 <br>
 
-<table background="../image/winter.jpg" style="box-shadow: 5px 5px 5px #888888;" units="relative" align="center" bgcolor=#0099ff border="1" cellpadding="2" cellspacing="6" width="100%">
+<table background="../image/summer.jpg" style="box-shadow: 5px 5px 5px #888888;" units="relative" align="center" bgcolor=#0099ff border="1" cellpadding="2" cellspacing="6" width="100%">
 
   <tbody>
     <tr>
       <td align="center" bgcolor="white"><a href="index.php" name="main">Main Menu</a></td>
       <td align="center" bgcolor="white"><a href="current-conditions.php" name="current">Current Conditions</a></td>
-      <td align="center" bgcolor="white"><a href="shop.php" name="shop">Shop Conditions</a></td>
-      <td align="center" bgcolor="white"><a href="basement.php" name="basement">Basement Conditions</a></td>
       <td align="center" bgcolor="white"><a href="report.php" name="Almanac">Weather Almanac</a></td>
-      <td align="center" bgcolor="white"><a href="http://192.168.1.70:8080/stream_pi.html" name="camera">Video Stream</a></td>
+      <td align="center" bgcolor="white"><a href="http://weather.local:8080/stream_pi.html" name="camera">Video Stream</a></td>
       <td align="center" bgcolor="white"><a href="system-status.php" name="status">Server Status</a></td>
     </tr>
   </tbody>
