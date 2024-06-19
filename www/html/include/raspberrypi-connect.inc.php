@@ -1,8 +1,8 @@
 <?php
 include ('include/private.inc.php');
-$servername = "192.168.1.61";
-$username = "weather";
-$dbname = "weather";
+$servername = "";
+$username = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -4,14 +4,14 @@
 <style>
 body {
     color: black;
-    background-color: #00ccff;
-    background-image: url("image/cloud.jpg");
+    background-color: #FFCC33;
+    #background-image: url("image/cloud.jpg");
     background-attachment: fixed;
 }
 .f_button {
-    background-color: #00ccff;
+    background-color: #686868;
     border: 1px solid black;
-    color: black;
+    color: white;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
@@ -25,7 +25,8 @@ body {
 }
 
 .f_button:hover {
-    background-color: white;
+    background-color: #E0E0E0;
+    color: black;
 }
 div.graphshadow {
     width: 480px;
@@ -36,7 +37,8 @@ div.graphshadow {
 
 h2 {
     #color: #af2f02; 
-    color: #005266;
+    #color: #005266;
+    color: #000000; 
     vertical-align: middle;
     text-align: center;
     text-shadow: 1px 1px 1px #b8b894;
@@ -44,15 +46,15 @@ h2 {
 </style>
 </head>
 <body>
-<table background="../image/summer.jpg" style="text-align: left; width: 100%; box-shadow: 5px 5px 5px #888888;" bgcolor=#0099ff border="0" cellpadding="2" cellspacing="2">
+<table style="text-align: left; width: 100%; box-shadow: 5px 5px 5px #888888;" bgcolor=#686868 border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="" src="../image/dht-gauge.png"><br>
+      <td style="vertical-align: top;"><img style="width: 75px; height: 75px;" alt="" src="../image/dht-gauge.png"><br>
       </td>
-      <td style="vertical-align: middle; text-align: center; text-shadow: 1px 1px #000000;"><font color="white">
-      <h1>Weather Lab</h1>
+      <td style="vertical-align: middle; text-align: center; text-shadow: 1px 1px #000000;"><font color=#F5F5F5>
+      <h1>Weather Lab 2.0</h1>
       </font> </td>
-      <td style="vertical-align: top; text-align: right; "><img style="width: 100px; height: 100px; " src="../image/bmp-gauge.png"><br>
+      <td style="vertical-align: top; text-align: right; "><img style="width: 75px; height: 75px; " src="../image/bmp-gauge.png"><br>
       </td>
     </tr>
   </tbody>
@@ -60,14 +62,14 @@ h2 {
 
 <br>
 
-<table background="../image/summer.jpg" style="box-shadow: 5px 5px 5px #888888;" units="relative" align="center" bgcolor=#0099ff border="1" cellpadding="2" cellspacing="6" width="100%">
+<table style="box-shadow: 5px 5px 5px #888888;" units="relative" align="center" bgcolor=#686868 border="1" cellpadding="2" cellspacing="6" width="100%">
 
   <tbody>
     <tr>
       <td align="center" bgcolor="white"><a href="index.php" name="main">Main Menu</a></td>
       <td align="center" bgcolor="white"><a href="current-conditions.php" name="current">Current Conditions</a></td>
       <td align="center" bgcolor="white"><a href="report.php" name="Almanac">Weather Almanac</a></td>
-      <td align="center" bgcolor="white"><a href="http://weather.local:8080/stream_pi.html" name="camera">Video Stream</a></td>
+      <td align="center" bgcolor="white"><a href="camera.php" name="camera">Video Stream</a></td>
       <td align="center" bgcolor="white"><a href="system-status.php" name="status">Server Status</a></td>
     </tr>
   </tbody>

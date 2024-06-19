@@ -5,7 +5,7 @@ include ('include/header.ss.inc.php');
 
 <table align=center>
 <th align=left><font color=white>
-<?php $run = "top -u pi -n 1 -b"; echo "Command: "; echo $run; ?>
+<?php $run = "top -u wayne -n 1 -b"; echo "Command: "; echo $run; ?>
 </th></font>
 <tr>
 <td>

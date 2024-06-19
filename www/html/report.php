@@ -3,7 +3,7 @@ $page_title = "Almanac";
 include ('include/header.inc.php');
 include ('include/raspberrypi-connect.inc.php');
 ?>
-<center><h2>Weather Almanac</h2></center><hr>
+<br>
 <table align=center>
 <th>Temperature</th><th>Humidity</th><th>DewPoint</th>
 <tr><td>
@@ -68,11 +68,8 @@ $conn->close();
 <br>
 <table style="text-align: center; box-shadow: 5px 5px 5px #888888;" bgcolor=#0099ff border="0" cellpadding="2" cellspacing="2">
 <tr>
-<td style="vertical-align: top;"><img src="image/weather-30-day-history.png" alt="30 day history"  /></td>
+<td style="vertical-align: top;"><img src="image/30-day-history.png" alt="30 day history" width=640 hight=480></td>
 </table>
 
 <?php include ('include/footer.inc.php');
 ?>
-</center>
-</body>
-</html>

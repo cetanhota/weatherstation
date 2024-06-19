@@ -51,12 +51,12 @@ li a:hover {
 <table  units="relative" width="100%" align="center" bgcolor=green border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
-      <td align="left" style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="" src="../image/pi-logo.png"><br>
+      <td align="left" style="vertical-align: top;"><img style="width: 75px; height: 75px;" alt="" src="../image/pi-logo.png"><br>
       </td>
       <td style="vertical-align: middle; text-align: center; text-shadow: 2px 2px #000000;"><font color="white">
       <h1>Pi Server Status</h1>
       </font> </td>
-      <td style="vertical-align: top; text-align: right; "><img style="width: 100px; height: 100px; " src="../image/linux_logo.png"><br>
+      <td style="vertical-align: top; text-align: right; "><img style="width: 75px; height: 75px; " src="../image/linux_logo.png"><br>
       </td>
     </tr>
   </tbody>
