@@ -10,7 +10,7 @@ import calendar
 import json
 
 # Opening JSON file
-f = open('.my.json')
+f = open('/home/wayne/bin/.my.json')
 
 # returns JSON object as a dictionary
 data = json.load(f)
@@ -19,6 +19,7 @@ hostname = str( data['hostname'] )
 username = str( data['username'] )
 password = str( data['password'] )
 database = str( data['database'] )
+portnumber = str( data['portnumber'] )
 
 # Closing file
 f.close()

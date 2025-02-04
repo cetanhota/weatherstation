@@ -10,7 +10,7 @@ from datetime import date
 import json
 
 # Opening JSON file
-f = open('.my.json')
+f = open('/home/wayne/bin/.my.json')
 
 # returns JSON object as a dictionary
 data = json.load(f)
@@ -19,6 +19,7 @@ hostname = str( data['hostname'] )
 username = str( data['username'] )
 password = str( data['password'] )
 database = str( data['database'] )
+portnumber = str( data['portnumber'] )
 
 # Closing file
 f.close()
@@ -28,19 +29,20 @@ d1 = today.strftime("%m/%d/%Y")
 
 mydb = mysql.connector.connect(
   host=hostname,
+  port=portnumber,
   user=username,
   password=password,
   database=database
 )
 
 mycursor = mydb.cursor()
-sql = "select tmp,hum,dew,hi,ts from weather.weatherv2 order by ts desc limit 96"
+sql = "SELECT tmp, dew, ts  FROM weather.weatherv2  WHERE ts >= NOW() - INTERVAL 24 HOUR  ORDER BY ts DESC;"
 
 mycursor.execute(sql)
 myresults = mycursor.fetchall()
 
-df = pd.DataFrame(myresults, columns=['tmp', 'hum', 'dew', 'hi', 'ts']).set_index('ts')
-df.columns=['Temperture','Humidity','Dew Point','Heat Index']
+df = pd.DataFrame(myresults, columns=['tmp', 'dew', 'ts']).set_index('ts')
+df.columns=['Temperture','Dew Point']
 df.plot(kind='line')
 
 plt.title('\nLast 24 Hours of Data.\n')
