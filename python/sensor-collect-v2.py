@@ -1,11 +1,19 @@
 #!/home/wayne/weather-lab/bin/python3
 # -*- coding:utf-8 -*- 
+<<<<<<< HEAD
 import time
+=======
+import time 
+>>>>>>> 46b2047a0590dd92ffa66c3b9b40baea0c41307e
 import sys
 import smbus
 import lgpio as sbc
 import json
+<<<<<<< HEAD
 import mysql.connector
+=======
+import mysql.connector 
+>>>>>>> 46b2047a0590dd92ffa66c3b9b40baea0c41307e
 from mysql.connector import Error
 
 if len(sys.argv) > 1 :
@@ -30,7 +38,11 @@ f.close()
 db = mysql.connector.connect(host=hostname,    # your host, usually localhost
                             user=username,         # your username
                             passwd=password,  # your password
+<<<<<<< HEAD
                             db=database)        # name of the data base
+=======
+                            db=database)        # name of the database
+>>>>>>> 46b2047a0590dd92ffa66c3b9b40baea0c41307e
 
 #i2c address 
 LPS22HB_I2C_ADDRESS     = 0x5C
@@ -149,20 +161,36 @@ class SHTC3():
             return 0  # Error
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     shtc3 = SHTC3(sbc, 1, SHTC3_I2C_ADDRESS) 
     u8Buf=[0,0,0] 
     lps22hb=LPS22HB() 
     time.sleep(0.1)
+=======
+    shtc3 = SHTC3(sbc, 1, SHTC3_I2C_ADDRESS)
+    u8Buf=[0,0,0] 
+    lps22hb=LPS22HB() 
+    time.sleep(0.1) 
+>>>>>>> 46b2047a0590dd92ffa66c3b9b40baea0c41307e
     u8Buf[0]=lps22hb._read_byte(LPS_PRESS_OUT_XL) 
     u8Buf[1]=lps22hb._read_byte(LPS_PRESS_OUT_L) 
     u8Buf[2]=lps22hb._read_byte(LPS_PRESS_OUT_H) 
     
+<<<<<<< HEAD
     temperature=round((shtc3.SHTC3_Read_TH()* 9/5.0 + 32), 2)
     humidity=round((shtc3.SHTC3_Read_RH()), 2)
     dewpoint=round(temperature - ((100-humidity)/5.0), 2)
     prs=round(((u8Buf[2]<<16)+(u8Buf[1]<<8)+u8Buf[0])/4096.0*0.02953, 2)
 
 if DEBUG == 1:
+=======
+    temperature=round((shtc3.SHTC3_Read_TH()* 9/5.0 + 32 - 15),2)
+    humidity=round((shtc3.SHTC3_Read_RH()),2)
+    dewpoint=round(temperature - ((100-humidity)/5.0),2)
+    prs=round(((u8Buf[2]<<16)+(u8Buf[1]<<8)+u8Buf[0])/4096.0*0.02953, 2)
+
+if DEBUG == 1:  
+>>>>>>> 46b2047a0590dd92ffa66c3b9b40baea0c41307e
     print("\nSensor debug output...\n")
     print(f"Temperature: {temperature}°F")
     print(f"Humidity: {humidity}%")
@@ -189,4 +217,10 @@ cur.close()
 
 #close connection
 db.close()
+<<<<<<< HEAD
 sys.exit(0)
+=======
+
+sys.exit(0)
+
+>>>>>>> 46b2047a0590dd92ffa66c3b9b40baea0c41307e

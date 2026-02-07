@@ -19,6 +19,7 @@ hostname = str( data['hostname'] )
 username = str( data['username'] )
 password = str( data['password'] )
 database = str( data['database'] )
+portnumber = str( data['portnumber'] )
 
 # Closing file
 f.close()

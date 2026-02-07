@@ -18,6 +18,7 @@ hostname = str( data['hostname'] )
 username = str( data['username'] )
 password = str( data['password'] )
 database = str( data['database'] )
+portnumber = str( data['portnumber'] )
 
 # Closing file
 f.close()
@@ -27,6 +28,7 @@ d1 = today.strftime("%m/%d/%Y")
 
 mydb = mysql.connector.connect(
   host=hostname,
+  port=portnumber,
   user=username,
   password=password,
   database=database
