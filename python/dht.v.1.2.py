@@ -10,7 +10,7 @@ from mysql.connector import Error
 import json
 
 # Opening JSON file
-f = open('.my.json')
+f = open('/home/wayne/bin/.my.json')
 
 # returns JSON object as a dictionary
 data = json.load(f)

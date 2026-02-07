@@ -8,7 +8,7 @@ import Adafruit_BMP.BMP085 as BMP085
 
 sensorBMP = BMP085.BMP085()
 sensor = Adafruit_DHT.AM2302
-pin = 04
+pin = 4
 
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).

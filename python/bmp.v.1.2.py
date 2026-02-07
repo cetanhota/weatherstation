@@ -14,7 +14,7 @@ sensor = BMP085.BMP085()
 inHg = 0.0002952998751*sensor.read_pressure()
 
 # Opening JSON file
-f = open('.my.json')
+f = open('/home/wayne/bin/.my.json')
 
 # returns JSON object as a dictionary
 data = json.load(f)
